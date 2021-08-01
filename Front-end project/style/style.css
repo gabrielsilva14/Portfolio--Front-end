@@ -1,0 +1,321 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  text-align: center;
+}
+
+/* ---------------------------phone version---------------------------- */
+
+/* header!!!!! */
+header {
+  background-image: url(../images/header.png);
+  height: 540px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 25px;
+  font-size: 1.2em;
+}
+
+a[href="login"] {
+  text-decoration: none;
+  color: white;
+}
+
+a[href="signup"] {
+  border: white solid 3px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  margin: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  margin-top: 160px;
+  font-weight: bold;
+  padding-bottom: 27px;
+  font-size: 20px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+header p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin: 20px;
+}
+
+a[href="holpartner"] {
+  background-color: #ff4e50;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+/* articles!!!! */
+
+.soloh3 {
+  font-weight: bold;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+article {
+  width: 300px;
+  height: 240px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  padding: 15px;
+}
+
+.art1 {
+  background-image: url(../images/step1desk.png);
+  margin-bottom: 10px;
+  background-position: center;
+}
+.art2 {
+  background-image: url(../images/step2desk.png);
+  margin-bottom: 10px;
+  background-position: center;
+}
+.art3 {
+  background-image: url(../images/step3desk.png);
+  margin-bottom: 10px;
+  background-position: center;
+}
+
+.steps {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  color: white;
+  font-size: 10px;
+  background-color: #ff4e50;
+  width: fit-content;
+  padding: 5px 20px;
+  border-radius: 25px;
+  letter-spacing: 2px;
+}
+
+article h3 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: bold;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 24px;
+}
+
+article p {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  color: white;
+}
+
+/* bottom part */
+
+section h3 {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 50px;
+}
+
+section p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin: 20px;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid 4px #ff4e50;
+}
+
+form input {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border: lightgray solid 1px;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+form button {
+  width: 300px;
+  height: 40px;
+  background-color: #ff4e50;
+  border: none;
+  border-radius: 25px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  margin-bottom: 50px;
+}
+
+/* footer!!!!!! */
+
+h4 {
+  padding-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #ff4e50;
+  font-weight: bold;
+  font-size: 23px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+li a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+footer img {
+  margin-top: 20px;
+}
+
+/* -----------------------tablet version----------------------------- */
+@media only screen and (min-width: 768px) {
+  /* Header!!!!!!!!!!!!! */
+  .topheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 20px 20px;
+  }
+
+  header {
+    height: 700px;
+  }
+
+  header h1 {
+    margin-top: 20px;
+  }
+
+  nav {
+    padding-top: 0;
+  }
+
+  header h2 {
+    padding-top: 120px;
+  }
+
+  header p {
+    padding-bottom: 30px;
+  }
+
+  /* articles!!!!!!!! */
+
+  .allarticles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: auto;
+    width: 768px;
+  }
+
+  .soloh3 {
+    padding-top: 70px;
+  }
+  article {
+    height: 400px;
+  }
+
+  /* Form!!!!!!!! */
+  form {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  form button {
+    margin-bottom: 0;
+    width: 150px;
+  }
+
+  form input {
+    margin-bottom: 0;
+  }
+
+  /* footer!!!!!!! */
+  ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    margin: 20px;
+    padding-top: 15px;
+  }
+
+  h5 {
+    padding-bottom: 10px;
+  }
+
+  h4 {
+    padding-top: 0;
+  }
+
+  footer img {
+    width: 110px;
+    height: 40px;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 940px) {
+}
